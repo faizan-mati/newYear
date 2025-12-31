@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year 2026 - My Love</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background: linear-gradient(135deg, #1a0033 0%, #330033 50%, #1a0033 100%);
+            color: #e0d4c8;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: rgba(20, 0, 30, 0.9);
+            border: 2px solid #8b4789;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(139, 71, 137, 0.5), inset 0 0 50px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+        }
+
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(180deg, rgba(139, 71, 137, 0.3) 0%, transparent 100%);
+            border-bottom: 1px solid #8b4789;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            color: #d4af37;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            color: #c9a0dc;
+            font-style: italic;
+        }
+
+        .tabs {
+            display: flex;
+            background: rgba(10, 0, 20, 0.8);
+            border-bottom: 2px solid #8b4789;
+        }
+
+        .tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            color: #c9a0dc;
+            font-size: 1.1em;
+            font-family: 'Georgia', serif;
+            transition: all 0.3s ease;
+            border-right: 1px solid #8b4789;
+        }
+
+        .tab:last-child {
+            border-right: none;
+        }
+
+        .tab:hover {
+            background: rgba(139, 71, 137, 0.2);
+        }
+
+        .tab.active {
+            background: rgba(139, 71, 137, 0.4);
+            color: #d4af37;
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .content {
+            padding: 40px 30px;
+            min-height: 300px;
+        }
+
+        .wish-content {
+            display: none;
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        .wish-content.active {
+            display: block;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .wish-content h2 {
+            color: #d4af37;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+        }
+
+        .wish-content p {
+            line-height: 1.8;
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #e0d4c8;
+        }
+
+        .ornament {
+            text-align: center;
+            font-size: 2em;
+            color: #8b4789;
+            margin: 20px 0;
+        }
+
+        .signature {
+            text-align: right;
+            font-style: italic;
+            margin-top: 30px;
+            color: #d4af37;
+            font-size: 1.1em;
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .tab {
+                font-size: 0.9em;
+                padding: 15px 10px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>✦ Happy New Year 2026 ✦</h1>
+            <p>A message from the heart</p>
+        </div>
+
+        <div class="tabs">
+            <button class="tab active" onclick="showWish('wife')">To My Beautiful Wife</button>
+            <button class="tab" onclick="showWish('grandma')">For Grandma</button>
+        </div>
+
+        <div class="content">
+            <div id="wife" class="wish-content active">
+                <h2>To My Beautiful Wife</h2>
+                <div class="ornament">❦</div>
+                <p>
+                    As we welcome 2026, I want you to know how grateful I am to have you in my life. You are my light,
+                    my joy, my home, my everything. You made my previous year better with laughter and so much positive
+                    energy, and I'm very glad I had you by my side in 2026. You cheered me up when I had bad times this
+                    year. I'm very glad we are going to start the new year together, and I wish to make this year your
+                    best year and make you the happiest girl in the world.
+                </p>
+                <p>
+                    Thank you for making every day brighter with your love and laughter. You are the best thing that
+                    ever happened to me. I'm very glad I have you. I love you a lot and want to be with you always and
+                    enjoy every new year together like this.
+                </p>
+                <p>
+                    May this new year bring you happiness, health, and all the beautiful things you deserve. I'm so
+                    lucky to walk through life with you by my side. I'm really looking forward to this year and many
+                    more, where we enjoy our time together in person and become the happiest couple and make a peaceful
+                    family with you.
+                </p>
+                <p>
+                    Here's to another year of making wonderful memories together. I love you more than words can say.
+                </p>
+                <div class="signature">Forever yours, with all my love ♥</div>
+            </div>
+
+            <div id="grandma" class="wish-content">
+                <h2>To Our Beloved Grandma</h2>
+                <div class="ornament">❦</div>
+                <p>
+                    Dearest Grandma, as we welcome 2026, we want you to know how much you mean to us. Your wisdom, your
+                    kindness, and your unconditional love have been the foundation of our family.
+                </p>
+                <p>
+                    The stories you share, the traditions you've passed down, and the love you've shown us throughout
+                    the years are treasures we hold dear in our hearts. You have taught us the true meaning of family,
+                    resilience, and grace.
+                </p>
+                <p>
+                    May this new year bless you with good health, peace, and happiness. May every day bring you comfort,
+                    joy, and reasons to smile. We are so grateful for every moment we get to spend with you.
+                </p>
+                <p>
+                    Thank you for being our guiding light and for all the love you've given us. We love you more than
+                    words can express and wish you a wonderful year ahead filled with warmth and blessings.
+                </p>
+                <div class="signature">With deepest love and respect ♥</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showWish(wish) {
+            const tabs = document.querySelectorAll('.tab');
+            const contents = document.querySelectorAll('.wish-content');
+
+            tabs.forEach(tab => tab.classList.remove('active'));
+            contents.forEach(content => content.classList.remove('active'));
+
+            event.target.classList.add('active');
+            document.getElementById(wish).classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
